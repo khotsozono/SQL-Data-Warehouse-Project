@@ -8,27 +8,41 @@ This project marks the beginning of my journey in Business Intelligence and data
 
 ## SQL Data Warehouse Project
 
- This project involved designing and building a SQL-based data warehouse from scratch using the Medallion Architecture approach. The solution was structured into bronze, silver, and gold layers to support efficient data ingestion, transformation, and analytics-ready reporting. Through this project, I applied data modeling and SQL transformation techniques to organize and refine raw data into meaningful business information. The development process was completed with guidance and learning resources from Data with Baraa, which helped strengthen my understanding of modern data warehousing practices.
+ This project involved designing and building a SQL-based data warehouse from scratch using the Medallion Architecture approach. The solution was structured into bronze, silver, and gold layers to support efficient data ingestion, transformation, and analytics-ready reporting. Through this project, I applied data modeling and SQL transformation techniques to organize and refine raw data into meaningful business information. The development process was completed with guidance and learning resources from Data with Baraa, who helped strengthen my understanding of modern data warehousing practices. 
+
+ This project involves:
+
+* **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+* **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+* **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
 
 ---
 
 ## Data Architecture 
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-![Data Architecture]()
-
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+The data architecture for this project follows Medallion Architecture: **Bronze**, **Silver**, and **Gold** layers: 
 
 
+<p align="center"> 
+ <img width="800" height="500" alt="Data Warehouse Architecture (1)" src="https://github.com/user-attachments/assets/29d8582f-9cef-4ee0-b8e0-eb3163db3c76" />
 
-**Data & BI Tools**
+* **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.  
 
-* Power BI
-* SQL Server
-* Excel
-* SSRS (Reporting Services)
+* **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+  
+- **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+
+
+--- 
+
+## Data Flow   
+
+ The data flow of this SQL data warehouse follows the Medallion Architecture, moving data through Bronze, Silver, and Gold layers to progressively improve data quality and usability. Raw data from CRM and ERP source systems is first ingested into the Bronze layer, where it is stored in its original form for traceability. The data is then cleaned, standardized, and integrated in the Silver layer, ensuring consistency and readiness for analysis. Finally, the refined data is transformed into business-focused models in the Gold layer, where fact and dimension tables (such as sales, customers, and products) are created to support reporting, analytics, and decision-making. 
+ 
+<p align="center"> 
+<img width="652" height="442" alt="Data Flow Diagram" src="https://github.com/user-attachments/assets/880779ab-2de9-42a8-b24b-d1c93d44714a" />
+
+--- 
 
 **Programming & Querying**
 
