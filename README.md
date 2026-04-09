@@ -45,10 +45,11 @@ The data architecture for this project follows Medallion Architecture: **Bronze*
 --- 
 ## Data Integration 
 
-The data integration layer combines information from both CRM and ERP systems to create a unified view of customers, products, and sales activity. The CRM system provides transactional sales data through **crm_sales_details**, which links customer information (**crm_cust_info**) and product information (**crm_prd_info**) using shared keys. The ERP system enriches this data by adding additional customer and product context, including customer location details from **erp_loc_a101**, extended customer attributes from **erp_cust_az12**, and product category information from **erp_px_cat_g1v2**. By connecting these tables through common identifiers such as customer IDs, product keys, and category IDs, the integration process consolidates operational and transactional data into a consistent structure that supports accurate analytics and reporting within the data warehouse.
+The data integration combines information from both CRM and ERP systems to create a unified view of customers, products, and sales activity. The CRM system provides transactional sales data through **crm_sales_details**, which links customer information (**crm_cust_info**) and product information (**crm_prd_info**) using shared keys. The ERP system enriches this data by adding additional customer and product context, including customer location details from **erp_loc_a101**, extended customer attributes from **erp_cust_az12**, and product category information from **erp_px_cat_g1v2**. By connecting these tables through common identifiers such as customer IDs, product keys, and category IDs, the integration process consolidates operational and transactional data into a consistent structure that supports accurate analytics and reporting within the data warehouse.
 
 <p align="center"> 
-<img width="750" height="650" alt="Data Intergration Visual" src="https://github.com/user-attachments/assets/edaaf3c7-fad4-4964-9cc0-08c8956ceb71" />
+<img width="691" height="719" alt="Data Integration Visual drawio" src="https://github.com/user-attachments/assets/9160ef0a-a9f4-4e4c-ae1f-4bfb3cb4f25b" />
+
 
  --- 
 
